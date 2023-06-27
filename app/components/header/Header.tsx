@@ -11,7 +11,7 @@ const Header = () => {
       <div className="relative">
       <Image
           src="/Image.png"
-          width="1492"
+          width="809"
           height="846"
           alt=""
           className="absolute block top-[39px] left-[1080px] w-[809px] h-[658px]"

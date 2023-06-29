@@ -80,10 +80,10 @@ const About = () => {
           anterior
         </p>
         <ul>
-          <li className="flex pb-[36px] items-center flex-row-reverse text-right font-[500] text-[16px] text-[#606060] hover:underline hover:cursor-pointer">
+          <li className="flex pb-[36px] items-center flex-row-reverse text-right font-[500] text-[16px] text-[#606060] hover:text-[#3D93FF] hover:font-bold hover:underline hover:cursor-pointer">
             <div className="h-[20px]">
               <Image
-                src="/bullet/Bullet1.png"
+                src="/bullet/Bullet.png"
                 width={19}
                 height={19}
                 alt=""
@@ -93,23 +93,23 @@ const About = () => {
             <p>Pruebas y depuración de problemas &nbsp;</p>
           </li>
 
-          <li className="flex  pb-[36px] items-center flex-row-reverse text-right font-[500] text-[16px] text-[#606060] hover:underline hover:cursor-pointer">
+          <li className="flex  pb-[36px] items-center flex-row-reverse text-right font-[500] text-[16px] text-[#606060] hover:text-[#3D93FF] hover:font-bold hover:underline hover:cursor-pointer">
             <div className="h-[20px]">
               <Image
-                src="/bullet/Bullet1.png"
+                src="/bullet/Bullet.png"
                 width={19}
                 height={19}
                 alt=""
-                className=""
+                className="relative"
               />
             </div>
             <p>Traduce diseños a código &nbsp;</p>
           </li>
 
-          <li className="flex pb-[157px] items-center flex-row-reverse text-right font-[500] text-[16px] text-[#606060] hover:underline hover:cursor-pointer">
+          <li className="flex pb-[157px] items-center flex-row-reverse text-right font-[500] text-[16px] text-[#606060] hover:underline hover:text-[#3D93FF] hover:font-bold hover:cursor-pointer">
             <div className="h-[20px]">
               <Image
-                src="/bullet/Bullet1.png"
+                src="/bullet/Bullet.png"
                 width={19}
                 height={19}
                 alt=""

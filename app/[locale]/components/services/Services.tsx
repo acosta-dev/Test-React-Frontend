@@ -1,4 +1,5 @@
 import React from "react";
+
 import Image from "next/image";
 import Carousel from "./Carousel";
 import "./Carousel.css";
@@ -13,7 +14,7 @@ const Services = () => {
             Esta info te llega desde un servicio externo
           </p>
           <p className="w-[405px] text-[18px] font-[300]">
-            Consultando el servicio en <br/>
+            Consultando el servicio en <br />
             https://react-frontend.pages.dev/slides.json, debes usar Context
             para enviar los datos que necesitas en la sección de abajo. A la
             derecha tiene un slide o carrusel.
@@ -32,24 +33,23 @@ const Services = () => {
           </button>
         </div>
         <div className="flex-1 pr-50">
-        <Image
-          src="/PrevArrow.png"
-          width={17}
-          height={29}
-          alt=""
-          className="nav-prev"
-        />
-        <Carousel/>
-        <Image
-          src="/NextSliderArrow.png"
-          width={17}
-          height={29}
-          alt=""
-          className="nav-next"
-        />
+          <Image
+            src="/PrevArrow.png"
+            width={17}
+            height={29}
+            alt=""
+            className="nav-prev"
+          />
+          <Carousel />
+          <Image
+            src="/NextSliderArrow.png"
+            width={17}
+            height={29}
+            alt=""
+            className="nav-next"
+          />
         </div>
       </div>
-      
     </div>
   );
 };

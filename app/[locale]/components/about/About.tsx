@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
+import {useTranslations} from 'next-intl';
 import Image from "next/image";
 
 const About = () => {
+  const t = useTranslations('Index');
   return (
     <div className="grid grid-cols-5 gap-3">
       <div className="ml-[420px] mt-[-80px] w-[400px] col-span-2">
@@ -67,7 +69,7 @@ const About = () => {
           Sobre nosotros
         </p>
         <p className="font-[700] text-[36px]  text-right w-[478px] pr-[60px] pb-[30px]">
-          Traduce solo este título maravilloso y el navbar
+        {t("text1")}
         </p>
         <p className="text-right text-[#2C2C2C] w-[414px] text-[18px] pb-[6px] font-[300px]">
           Usted debe tener un sólido conocimiento de HTML y CSS. Debe comprender

@@ -1,0 +1,33 @@
+.swiper {
+  width: 700px !important;
+  height: 400px !important;
+  margin-left: 48px;
+}
+
+.swiper-button-next {
+  transform: translateX(10px);
+}
+
+.nav-prev {
+  position: absolute;
+  bottom: -21%;
+  transform: translateY(-50%);
+  transform: translateX(100%);
+  z-index: 10;
+}
+
+.nav-next {
+  position: absolute;
+  right: 313px;
+  transform: translateY(-690%);
+  z-index: 10; 
+}
+
+.card:hover{
+    background-color: #2E53A3;
+    color: white;
+}
+
+.image {
+    padding-top: 40px;
+}   

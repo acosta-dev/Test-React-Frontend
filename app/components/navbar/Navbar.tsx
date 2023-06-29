@@ -11,31 +11,31 @@ const Navbar = () => {
         <div className="text-sm lg:flex-grow uppercase lg:ml-8">
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4 font-[16px]"
+            className="block mt-4 lg:inline-block lg:mt-0  hover:text-blue-700 hover:underline hover:font-bold mr-4 font-[16px]"
           >
             Inicio
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0  hover:text-blue-700 hover:underline hover:font-bold mr-4"
           >
             Servicios
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0  hover:text-blue-700 hover:underline hover:font-bold mr-4"
           >
             Nosotros
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0  hover:text-blue-700 hover:underline hover:font-bold mr-4"
           >
             Herramientas
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0  hover:text-white"
+            className="block mt-4 lg:inline-block lg:mt-0  hover:text-blue-700 hover:underline hover:font-bold"
           >
             Socios
           </a>
@@ -44,7 +44,7 @@ const Navbar = () => {
         <div>
             <div className="flex">
           <button
-            className="inline-block text-sm px-4 py-2 bg-[#2D509E] rounded-full leading-none border border-white hover:border-transparent hover:bg-white mt-4 lg:mt-0 text-white font-bold text-[20px]"
+            className="inline-block text-sm px-4 py-2 bg-[#2D509E] rounded-full leading-none border-white hover:border-transparent hover:scale-110 mt-4 lg:mt-0 text-white font-bold text-[20px] shadow-xl shadow-[#709DDA] border-0"
           >
             Contactar
           </button>

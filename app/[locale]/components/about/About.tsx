@@ -84,10 +84,10 @@ const About = () => {
           anterior
         </p>
 
-        <ul className=" ml-[20px]">
-          <li className=" ">Pruebas y depuración de problemas</li>
-          <li className=" ">Traduce diseños a código</li>
-          <li className=" ">Optimización y rendimiento</li>
+        <ul className="ml-[20px] pt-6 text-[#606060]">
+          <li className="pb-6 font-[500px] text-[16px] hover:underline cursor-pointer">Pruebas y depuración de problemas</li>
+          <li className="pb-6 font-[500px] text-[16px] hover:underline cursor-pointer">Traduce diseños a código</li>
+          <li className="pb-6 font-[500px] text-[16px] hover:underline cursor-pointer">Optimización y rendimiento</li>
         </ul>
       </div>
     </div>

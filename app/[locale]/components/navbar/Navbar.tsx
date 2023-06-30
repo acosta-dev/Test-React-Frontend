@@ -53,13 +53,6 @@ const Navbar = () => {
             {t("contact")}
           </button>
           <LocaleSwitcher/>
-          {/* <Image
-          className="ml-[20px] cursor-pointer"
-          src="./es.svg"
-          width={27}
-          height={18}
-          alt="Spanish"
-          /> */}
           </div>
         </div>
       </div>

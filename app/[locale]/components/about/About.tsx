@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const About = () => {
-  const t = useTranslations('Index');
+  const t = useTranslations("Index");
   return (
-    <div className="grid grid-cols-5 gap-3">
-      <div className="ml-[420px] mt-[-80px] w-[400px] col-span-2">
+    <div className="lg:grid lg:grid-cols-5 pb-[200px]">
+      <div className="hidden ml-[310px] mt-[180px] w-[400px] lg:col-span-2 lg:block">
         <Image
           src="/puzzle/Rectangle1.png"
           width={198}
@@ -64,7 +64,31 @@ const About = () => {
           className="mt-[-280px] ml-[375px] h-[290px]"
         />
       </div>
-      <div className="ml-[420px] mt-[-80px] col-span-3 mr-[300px]">
+      <div className="flex flex-wrap mt-[40px] lg:text-right lg:mr-[400px] lg:mt-[220px] lg:col-span-3 lg:justify-end">
+        <p className="font-[700] text-[20px] text-[#3A67CC] ml-[20px]">
+          Sobre nosotros
+        </p>
+        <p className="font-[700] text-[36px] ml-[20px] lg:w-[678px]">
+          {t("text1")}
+        </p>
+        <p className="ml-[20px] lg:text-right text-[#2C2C2C] lg:w-[424px] text-[18px] pb-[6px] lg:pb-[6px] font-[300px]">
+          Usted debe tener un sólido conocimiento de HTML y CSS. Debe comprender
+          la arquitectura de componentes de React. Debe tener buena atención al
+          detalle, organización del código, habilidades de comunicación efectiva
+          y capacidad para trabajar en equipo.
+        </p>
+        <p className="ml-[20px] lg:text-right text-[#606060] font-[700] text-[22px] lg:pb-[6px] lg:w-[500px]">
+          Usa Context para acceder a los títulos de abajo desde la sección
+          anterior
+        </p>
+
+        <ul className=" ml-[20px]">
+          <li className=" ">Pruebas y depuración de problemas</li>
+          <li className=" ">Traduce diseños a código</li>
+          <li className=" ">Optimización y rendimiento</li>
+        </ul>
+      </div>
+      {/* <div className="ml-[420px] mt-[-80px] col-span-3 mr-[300px]">
         <p className="font-[700] text-[20px] text-[#3A67CC] text-right">
           Sobre nosotros
         </p>
@@ -121,7 +145,7 @@ const About = () => {
             <p>Optimización y rendimiento &nbsp;</p>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

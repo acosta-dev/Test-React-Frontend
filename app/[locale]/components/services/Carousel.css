@@ -1,4 +1,16 @@
+.nav-prev {
+  position: absolute;
+  transform: translateY(10%);
+  z-index: 10;
+}
+
 .swiper {
+  width: 700px !important;
+  height: 400px !important;
+  margin-left: 48px;
+}
+
+/* .swiper {
   width: 700px !important;
   height: 400px !important;
   margin-left: 48px;
@@ -10,9 +22,7 @@
 
 .nav-prev {
   position: absolute;
-  bottom: -21%;
-  transform: translateY(-50%);
-  transform: translateX(100%);
+  transform: translateY(700%);
   z-index: 10;
 }
 
@@ -30,4 +40,4 @@
 
 .image {
     padding-top: 40px;
-}   
+}    */

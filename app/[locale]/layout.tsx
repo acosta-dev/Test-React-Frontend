@@ -1,29 +1,14 @@
 'use client';
 
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "es" }];
 }
-
-
-
-const consoleError = console.error.bind(console);
-// eslint-disable-next-line
-console.error = (message, ...args) => {
-  if (
-    typeof message === "string" &&
-    message.startsWith("[React Intl] Missing message:")
-  ) {
-    return;
-  }
-  consoleError(message, ...args);
-};
 
 export default async function LocaleLayout({ children, params: { locale } }) {
   let messages;
@@ -34,7 +19,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} title="Test React Frontend">
       <body>
         <NextIntlClientProvider
           locale={locale}

@@ -26,7 +26,7 @@ const GlobalContext = createContext<ContextProps>({
   setData: (): ISlides[] => [],
 });
 
-export const GlobalContextProvider = ({ children }) => {
+export const GlobalContextProvider = ({ children, }:{children: React.ReactNode}) => {
   const [userId, setUserId] = useState("");
   const [data, setData] = useState<[] | ISlides[]>([]);
 

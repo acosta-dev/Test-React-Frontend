@@ -9,19 +9,25 @@ export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "es" }];
 }
 
-export default async function LocaleLayout({ children, params: { locale } }) {
+export default async function LocaleLayout({
+  children,
+  params
+}: {
+  children: React.ReactNode;
+  params: { locale: string;};
+}) {
   let messages;
   try {
-    messages = (await import(`../../messages/${locale}.json`)).default;
+    messages = (await import(`../../messages/${params.locale}.json`)).default;
   } catch (error) {
     notFound();
   }
 
   return (
-    <html lang={locale} title="Test React Frontend">
+    <html lang={params.locale} title="Test React Frontend">
       <body>
         <NextIntlClientProvider
-          locale={locale}
+          locale={params.locale}
           messages={messages}
           onError={(err) => {
             return;

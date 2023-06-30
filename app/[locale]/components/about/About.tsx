@@ -11,61 +11,61 @@ const About = () => {
     <div className="flex flex-wrap lg:grid lg:grid-cols-5 pb-[200px]">
       <div className="invisible hidden ml-[310px] mt-[180px] w-[400px] lg:col-span-2 lg:visible lg:block">
         <div>
-        <Image
-          src="/puzzle/Rectangle1.png"
-          width={198}
-          height={-10}
-          alt=""
-          className="pb-[30px] w-[180px]"
-        />
+          <Image
+            src="/puzzle/Rectangle1.png"
+            width={198}
+            height={-10}
+            alt=""
+            className="pb-[30px] w-[180px]"
+          />
 
-        <Image
-          src="/puzzle/Puzzle1.png"
-          width={199}
-          height={358}
-          alt=""
-          className="mt-[-325px] ml-[20px]"
-        />
+          <Image
+            src="/puzzle/Puzzle1.png"
+            width={199}
+            height={358}
+            alt=""
+            className="mt-[-325px] ml-[20px]"
+          />
 
-        <Image
-          src="/puzzle/Puzzle2.png"
-          width={337}
-          height={184}
-          alt=""
-          className="mt-[-340px] ml-[215px]"
-        />
+          <Image
+            src="/puzzle/Puzzle2.png"
+            width={337}
+            height={184}
+            alt=""
+            className="mt-[-340px] ml-[215px]"
+          />
 
-        <Image
-          src="/puzzle/Puzzle3.png"
-          width={131}
-          height={158}
-          alt=""
-          className="mt-[-10px] ml-[215px]"
-        />
+          <Image
+            src="/puzzle/Puzzle3.png"
+            width={131}
+            height={158}
+            alt=""
+            className="mt-[-10px] ml-[215px]"
+          />
 
-        <Image
-          src="/puzzle/Puzzle5.png"
-          width={328}
-          height={169}
-          alt=""
-          className="mt-[-10px] ml-[20px]"
-        />
+          <Image
+            src="/puzzle/Puzzle5.png"
+            width={328}
+            height={169}
+            alt=""
+            className="mt-[-10px] ml-[20px]"
+          />
 
-        <Image
-          src="/puzzle/Puzzle6.png"
-          width={210}
-          height={150}
-          alt=""
-          className="mt-[-315px] ml-[345px] h-[318px] relative"
-        />
+          <Image
+            src="/puzzle/Puzzle6.png"
+            width={210}
+            height={150}
+            alt=""
+            className="mt-[-315px] ml-[345px] h-[318px] relative"
+          />
 
-        <Image
-          src="/puzzle/Rectangle2.png"
-          width={193}
-          height={341}
-          alt=""
-          className="mt-[-280px] ml-[375px] h-[290px]"
-        />
+          <Image
+            src="/puzzle/Rectangle2.png"
+            width={193}
+            height={341}
+            alt=""
+            className="mt-[-280px] ml-[375px] h-[290px]"
+          />
         </div>
       </div>
       <div className="flex flex-wrap mt-[40px] lg:text-right lg:mr-[400px] lg:mt-[220px] md:col-span-3 lg:col-span-3 lg:justify-end">
@@ -89,8 +89,33 @@ const About = () => {
         <ul className="ml-[20px] pt-6 text-[#606060]">
           {data.map((slide) => {
             return (
-              <li key={slide.id} className="pb-6 font-[500px] text-[16px] hover:underline cursor-pointer">{slide.title}</li>
-            )
+              <div
+                key={slide.id}
+                className="flex h-[20px] group cursor-pointer lg:flex-row-reverse mb-6 lg:mb-[16px] items-center"
+              >
+                <Image
+                  src="/bullet/Bullet1.png"
+                  style={{ width: "19px", height: "19px" }}
+                  width={19}
+                  height={19}
+                  alt=""
+                />
+                <Image
+                  src="/bullet/Bullet2.png"
+                  width={5}
+                  height={5}
+                  style={{ width: "5px", height: "5px" }}
+                  alt=""
+                  className="relative invisible  group-hover:visible top-[0px] left-[-12px] lg:top-[0px] lg:left-[12px]"
+                />
+                <li
+                  key={slide.id}
+                  className="font-[500px] text-[16px] hover:underline cursor-pointer"
+                >
+                  {slide.title}
+                </li>
+              </div>
+            );
           })}
         </ul>
       </div>
@@ -99,5 +124,3 @@ const About = () => {
 };
 
 export default About;
-
-// w-[416px]

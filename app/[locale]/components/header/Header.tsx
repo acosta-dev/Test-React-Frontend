@@ -24,7 +24,7 @@ const Header = () => {
           className="relative block left-[188px] top-[-47]"
         />
 
-        <h1 className="absolute  top-[10px] lg:top-[150px] left-[20px] lg:left-[150px] text-white text-[60px] font-bold w-[350px] lg:w-[547px]">
+        <h1 className="absolute top-[10px] lg:top-[150px] left-[20px] lg:left-[150px] text-white text-[60px] font-bold w-[350px] lg:w-[547px]">
           Es tiempo de maquetar
         </h1>
         <p className="absolute left-[20px] top-[300px] lg:top-[345px] lg:left-[150px] lg:w-[590px] text-white text-[20px] font-[700px]">
@@ -38,7 +38,7 @@ const Header = () => {
             width="165"
             height="122"
             alt=""
-            className="relative block ml-[200px] top-[30px] sm:top-[20px] md:top-[60px] lg:top-[77px] lg:ml-[240px]  "
+            className="relative block ml-[200px] top-[30px] sm:top-[270px] md:top-[300px] lg:top-[90px] lg:ml-[240px]  "
           />
         </p>
       </div>

@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next-intl/client";
-import { ChangeEvent, useTransition } from "react";
+import { useTransition } from "react";
 import Image from "next/image";
 
 export default function LocaleSwitcher() {
@@ -42,22 +42,5 @@ export default function LocaleSwitcher() {
         />
       )}
     </div>
-    // <div
-    // >
-    //   <p className="sr-only">{t('label')}</p>
-    //   <select
-    //     className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
-    //     defaultValue={locale}
-    //     disabled={isPending}
-    //     onChange={onSelectChange}
-    //   >
-    //     {['en', 'es'].map((cur) => (
-    //       <option key={cur} value={cur}>
-    //         {t('locale', {locale: cur})}
-    //       </option>
-    //     ))}
-    //   </select>
-    //   <span className="pointer-events-none absolute top-[8px] right-2">⌄</span>
-    // </div>
   );
 }

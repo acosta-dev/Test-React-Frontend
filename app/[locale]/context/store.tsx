@@ -27,7 +27,6 @@ const GlobalContext = createContext<ContextProps>({
 });
 
 export const GlobalContextProvider = ({ children, }:{children: React.ReactNode}) => {
-  const [userId, setUserId] = useState("");
   const [data, setData] = useState<[] | ISlides[]>([]);
 
   return (

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Image from "next/image";
 import Header from "./components/header/Header";
 import Services from "./components/services/Services";

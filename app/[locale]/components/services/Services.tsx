@@ -19,17 +19,17 @@ const Services = () => {
           tiene un slide o carrusel.
         </p>
         <button className="hover:scale-110 rounded-full mt-[27px] w-[199px] h-[55px] bg-[#2E53A3] text-white font-bold shadow-xl shadow-[#709DDA]">
-            <div className="flex justify-center items-center">
-              <p className="mr-[8px]">Ver más</p>
-              <Image
-                src="/RightArrow.png"
-                width="26"
-                height="19"
-                alt=""
-                className=""
-              />
-            </div>
-          </button>
+          <div className="flex justify-center items-center">
+            <p className="mr-[8px]">Ver más</p>
+            <Image
+              src="/RightArrow.png"
+              width="26"
+              height="19"
+              alt=""
+              className=""
+            />
+          </div>
+        </button>
       </div>
       <div className="flex flex-wrap ml-[-20px] lg:mt-[160px] lg:ml-[69px]">
         <Image

@@ -1,11 +1,11 @@
 {
-    "Index": {
-      "home": "Home",
-      "services": "Services",
-      "about_us": "About Us",
-      "tools": "Tools",
-      "partners": "Partners",
-      "contact": "Contact",
-      "text1": "Translate only this wonderful title and the navbar"
-    }
+  "Index": {
+    "home": "Home",
+    "services": "Services",
+    "about_us": "About Us",
+    "tools": "Tools",
+    "partners": "Partners",
+    "contact": "Contact",
+    "text1": "Translate only this wonderful title and the navbar"
   }
+}

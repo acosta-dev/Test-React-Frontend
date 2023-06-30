@@ -1,10 +1,9 @@
-'use client';
+"use client";
 
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-
-
+import { GlobalContextProvider } from "./context/store";
 
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "es" }];
@@ -25,10 +24,10 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           locale={locale}
           messages={messages}
           onError={(err) => {
-           return;
+            return;
           }}
         >
-          {children}
+          <GlobalContextProvider>{children}</GlobalContextProvider>
         </NextIntlClientProvider>
       </body>
     </html>

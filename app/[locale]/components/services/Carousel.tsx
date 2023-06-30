@@ -11,24 +11,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./Carousel.css";
-interface Slides {
-  id: string;
-  icon: string;
-  title: string;
-  description: string;
-  link: string;
-}
-const url = "https://react-frontend.pages.dev/slides.json";
-const Carousel = (props: any) => {
-  const [data, setData] = useState<any[]>([]);
+import { useGlobalContext } from "../../context/store";
 
-  useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
+const Carousel = (props: any) => {
+  const { data } = useGlobalContext();
 
   return (
     <>

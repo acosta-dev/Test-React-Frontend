@@ -2,8 +2,10 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useGlobalContext } from "../../context/store";
 
 const About = () => {
+  const { data } = useGlobalContext();
   const t = useTranslations("Index");
   return (
     <div className="flex flex-wrap lg:grid lg:grid-cols-5 pb-[200px]">
@@ -85,9 +87,11 @@ const About = () => {
         </p>
 
         <ul className="ml-[20px] pt-6 text-[#606060]">
-          <li className="pb-6 font-[500px] text-[16px] hover:underline cursor-pointer">Pruebas y depuración de problemas</li>
-          <li className="pb-6 font-[500px] text-[16px] hover:underline cursor-pointer">Traduce diseños a código</li>
-          <li className="pb-6 font-[500px] text-[16px] hover:underline cursor-pointer">Optimización y rendimiento</li>
+          {data.map((slide) => {
+            return (
+              <li key={slide.id} className="pb-6 font-[500px] text-[16px] hover:underline cursor-pointer">{slide.title}</li>
+            )
+          })}
         </ul>
       </div>
     </div>
